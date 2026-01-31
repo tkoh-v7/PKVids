@@ -1,1 +1,109 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    base-uri 'self';
+    object-src 'none';
+    frame-ancestors 'none';
+    form-action 'none';
+    img-src 'self' data:;
+    style-src 'self';
+    script-src 'self';
+    media-src https://ia.archive.org https://*.archive.org;
+    upgrade-insecure-requests;
+    block-all-mixed-content;
+    " />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
+    <title>PKTube ~ an archive of RuneScape PKing videos</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar" role="banner">
+  <div class="brand">
+    <div class="crest" aria-hidden="true">
+  <img src="assets/imgs/pfp.png" alt="" />
+</div>
+
+    <div class="brand-text">
+      <div class="brand-title">PKTube ~ an archive of RuneScape PKing videos</div>
+      <div class="brand-subtitle">PRE-EOC PK Videos • Edgeville • Varrock • Mage Bank • and more..</div>
+    </div>
+  </div>
+
+    <div class="topbar-actions">
+      <label class="search">
+        <span class="sr-only">Search videos</span>
+        <input id="searchInput" type="search" placeholder="Search: edge, whip, dds..." autocomplete="off" />
+      </label>
+    </div>
+  </header>
+
+  <main id="main" class="layout" role="main">
+    <section class="viewer" aria-label="Video player">
+      <div class="player-shell">
+        <video
+          id="video"
+          class="video"
+          controls
+          preload="metadata"
+          playsinline
+        ></video>
+
+        <div class="meta">
+          <h1 id="videoTitle" class="title">Loading…</h1>
+          <p id="videoDesc" class="desc"></p>
+
+          <div class="meta-row">
+            <span id="videoTag" class="tag" aria-label="Category"></span>
+            <span id="videoYear" class="tag" aria-label="Year"></span>
+            <span id="videoMap" class="tag" aria-label="Location"></span>
+          </div>
+
+          <div class="controls">
+            <button id="prevBtn" class="btn" type="button">◄ Prev</button>
+            <button id="nextBtn" class="btn" type="button">Next ►</button>
+            <button id="shuffleBtn" class="btn btn-ghost" type="button">Shuffle</button>
+            <button id="copyBtn" class="btn btn-ghost" type="button">Copy link</button>
+          </div>
+
+          <div class="note" id="statusNote" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar" aria-label="Playlist">
+      <div class="sidebar-header">
+        <div class="sidebar-title">Playlist</div>
+        <div id="countLabel" class="sidebar-subtitle"></div>
+      </div>
+      <div id="playlist" class="playlist" role="list"></div>
+    </aside>
+  </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-text">
+            Built on GitHub Pages • Videos streamed via archive.org • No ads • No trackers
+            </div>
+
+            <a
+            href="https://buymeacoffee.com/pktube"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bmac-link"
+            >
+            ☕ Support PKTube
+            </a>
+        </div>
+    </footer>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

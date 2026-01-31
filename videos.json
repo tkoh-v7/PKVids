@@ -1,0 +1,51 @@
+[
+  {
+    "id": "000",
+    "title": "Welcome to PKTube",
+    "description": "A behind the scenes look at the project, and a thank you.",
+    "date": "31st January 2026",
+    "src": "https://videos.yoursite.com/fps/clip1.mp4",
+    "thumbnail": "assets/imgs/thumbnails/000.png",
+    "duration": "1:42",
+    "tags": [
+      "PKTube",
+      "2026"
+    ]
+  },
+  {
+    "id": "001",
+    "title": "00 O X 0 O0 PK Vid 1",
+    "description": "00 O X 0 O0 delivers a hard hitting 1 defence pure video.",
+    "date": "19th March 2006",
+    "src": "https://ia600408.us.archive.org/17/items/0-x-0-pk-vid-1/0_X_0_PkVid1.mp4",
+    "thumbnail": "assets/imgs/thumbnails/001.png",
+    "duration": "7:21",
+    "tags": [
+      "dds",
+      "whip",
+      "edgeville",
+      "2006",
+      "pure",
+      "panic eat",
+      "1 def"
+    ]
+  },
+  {
+    "id": "002",
+    "title": "0mfg0rz PK Vid 11 - No More Drama",
+    "description": "0mfg0rz was one of the greatest 1 defence PKers of the Golden Era, with that said this video is with 82 defence.",
+    "date": "21st July 2006",
+    "src": "https://ia601801.us.archive.org/33/items/0mfg-0rz/0mfg0rz.mp4",
+    "thumbnail": "assets/imgs/thumbnails/002.png",
+    "duration": "7:21",
+    "tags": [
+      "dds",
+      "whip",
+      "edgeville",
+      "mage bank",
+      "2006",
+      "main",
+      "70 def"
+    ]
+  }
+]
