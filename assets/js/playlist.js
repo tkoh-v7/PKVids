@@ -3,7 +3,7 @@ import { safeText } from "./utils.js";
 export function createPlaylist({ containerEl, countEl }) {
   function render({ videos, activeId, onPick }) {
     containerEl.innerHTML = "";
-    countEl.textContent = `${videos.length} clips`;
+    countEl.textContent = `${videos.length} videos`;
 
     for (const v of videos) {
       const item = document.createElement("div");
@@ -52,3 +52,4 @@ export function createPlaylist({ containerEl, countEl }) {
 
   return { render };
 }
+
