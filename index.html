@@ -11,12 +11,14 @@
     frame-ancestors 'none';
     form-action 'none';
     img-src 'self' data:;
-    style-src 'self';
+    style-src 'self' 'unsafe-inline';
     script-src 'self';
     media-src https://ia.archive.org https://*.archive.org;
+    connect-src 'self' https://still-butterfly-142e.kirkjlemon.workers.dev;
     upgrade-insecure-requests;
     block-all-mixed-content;
-    " />
+    ">
+
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
     <title>PKTube ~ an archive of RuneScape PKing videos</title>
 
@@ -116,6 +118,7 @@
 </body>
 
 </html>
+
 
 
 
