@@ -158,15 +158,6 @@ body{
   gap:6px;
   opacity:.9;
 }
-.vote-click,
-.vote-click *,
-.vote-click:link,
-.vote-click:visited,
-.vote-click:hover,
-.vote-click:active,
-.vote-click:focus {
-  text-decoration: none !important;
-}
 
 .vote-click{
   cursor:pointer;
