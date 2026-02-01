@@ -114,13 +114,17 @@ body{
   border-radius:16px;
   overflow:hidden;
   box-shadow:0 20px 50px var(--shadow);
+  position: relative;
 }
 
+/* IMPORTANT: video sits BELOW meta for clickability */
 .video{
   width:100%;
   background:#000;
   display:block;
   border-bottom:1px solid var(--line);
+  position: relative;
+  z-index: 1;
 }
 
 .meta{
@@ -128,6 +132,8 @@ body{
   background:
     radial-gradient(600px 280px at 20% 0%, rgba(211,179,91,.08), transparent 60%),
     linear-gradient(180deg, var(--stone), var(--panel));
+  position: relative;
+  z-index: 2; /* above video */
 }
 
 .title{
@@ -140,6 +146,46 @@ body{
   margin:0 0 12px 0;
   color:var(--parch2);
   line-height:1.4;
+}
+
+/* ---------------- VOTES (GLOBAL 👍👎) ---------------- */
+
+.video-votes{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:6px 0 12px;
+  font-size:.95rem;
+  position: relative;
+  z-index: 3; /* ABOVE VIDEO CONTROLS */
+  pointer-events: auto;
+}
+
+.vote-count{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  opacity:.9;
+}
+
+.vote-click{
+  cursor:pointer;
+  user-select:none;
+  pointer-events:auto;
+}
+
+.vote-click:hover{
+  text-decoration:underline;
+}
+
+.vote-click.active{
+  color:var(--gold);
+  font-weight:700;
+  text-decoration:underline;
+}
+
+.vote-sep{
+  opacity:.6;
 }
 
 /* ---------------- TAGS ---------------- */
@@ -344,44 +390,4 @@ body{
   .player-shell{
     border-radius:14px;
   }
-}
-.video-votes {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 6px 0 12px;
-  font-size: 0.95rem;
-}
-
-.vote-btn {
-  background: none;
-  border: 1px solid #555;
-  border-radius: 4px;
-  padding: 4px 8px;
-  cursor: pointer;
-  color: inherit;
-}
-
-.vote-btn:hover {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.vote-btn:disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
-}
-
-.vote-count {
-  opacity: 0.85;
-}
-.vote-click {
-  pointer-events: auto;
-  cursor: pointer;
-}
-
-.video-votes {
-  pointer-events: auto;
-}
-.meta {
-  pointer-events: auto;
 }
