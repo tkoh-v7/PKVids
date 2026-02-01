@@ -60,7 +60,31 @@
         <div class="meta">
           <h1 id="videoTitle" class="title">Loading…</h1>
           <p id="videoDesc" class="desc"></p>
+            <div class="video-votes" aria-label="Video rating">
+  <button
+    id="thumbUp"
+    class="vote-btn"
+    type="button"
+    aria-label="Thumbs up"
+    title="Thumbs up"
+  >
+    👍
+  </button>
 
+  <button
+    id="thumbDown"
+    class="vote-btn"
+    type="button"
+    aria-label="Thumbs down"
+    title="Thumbs down"
+  >
+    👎
+  </button>
+
+  <span id="voteCount" class="vote-count" aria-live="polite">
+    👍 0 | 👎 0
+  </span>
+</div>
           <div class="meta-row">
             <span id="videoTag" class="tag" aria-label="Category"></span>
             <span id="videoYear" class="tag" aria-label="Year"></span>
@@ -118,6 +142,7 @@
 </body>
 
 </html>
+
 
 
 
