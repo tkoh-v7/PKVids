@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer" />
     <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    base-uri 'self';
-    object-src 'none';
-    frame-ancestors 'none';
-    form-action 'none';
-    img-src 'self' data:;
-    style-src 'self';
-    script-src 'self';
-    media-src https://ia.archive.org https://*.archive.org;
-    upgrade-insecure-requests;
-    block-all-mixed-content;
-    " />
+      default-src 'self';
+      base-uri 'self';
+      object-src 'none';
+      frame-ancestors 'none';
+      form-action 'none';
+    
+      img-src 'self' data:;
+      style-src 'self' 'unsafe-inline';
+      script-src 'self';
+    
+      connect-src
+        'self'
+        https://still-butterfly-142e.kirkjlemon.workers.dev;
+    
+      media-src
+        'self'
+        https://ia.archive.org
+        https://*.archive.org
+        https://videos.yoursite.com;
+    
+      upgrade-insecure-requests;
+      block-all-mixed-content;
+    ">
+
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
     <title>PKTube ~ an archive of RuneScape PKing videos</title>
 
@@ -105,3 +117,4 @@
   <script type="module" src="assets/js/app.js"></script>
 </body>
 </html>
+
