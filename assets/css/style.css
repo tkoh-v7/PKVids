@@ -135,11 +135,11 @@ body{
 
 .brand-title{
   font-size:18px;
-  color:var(--gold);
-  text-shadow: 0 1px 0 #000;
   font-family: "Bytesized", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color:var(--gold);
+  text-shadow: 0 1px 0 #000;
 }
 .brand-subtitle{
   font-family: "Bytesized", sans-serif;
