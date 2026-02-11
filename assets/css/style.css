@@ -69,17 +69,6 @@ body{
       #0b0b0b 100%
     );
 }
-.PixelFont {
-  font-family: "Bytesized", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.SmartFont {
- font-family: "Playwrite NZ Basic", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 
 .topbar::after{
   content:"";
@@ -148,8 +137,14 @@ body{
   font-size:16px;
   color:var(--gold);
   text-shadow: 0 1px 0 #000;
+  font-family: "Bytesized", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .brand-subtitle{
+  font-family: "Bytesized", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size:12px;
   color:var(--soft);
 }
